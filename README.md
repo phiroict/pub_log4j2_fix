@@ -61,3 +61,8 @@ Check if it were successful by:
 make check
 ```
 
+If things went pear shaped: Restore with 
+
+```bash
+make restore
+```
