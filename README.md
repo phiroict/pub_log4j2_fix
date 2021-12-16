@@ -48,7 +48,7 @@ Now check where the log4j jars are placed
 ```bash
 make check
 ```
-
+Make sure AnypointStudio or the mule server is shut down. When running these jars are in memory and patching will do something unpredictable. 
 Then run 
 
 ```bash
