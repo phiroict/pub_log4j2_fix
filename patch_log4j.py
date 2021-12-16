@@ -7,8 +7,9 @@ log4j_patterns= [
     "log4j-core",
     "log4j-slf4j-impl"]
 jar_pattern = ".jar"
-
+# CHANGE THIS PATH ###########################
 source = "/mnt/c/AnypointStudio"
+# ############################################
 patch_source = "apache-log4j-2.16.0-bin"
 
 for root, sub_folders, files in os.walk(source):
