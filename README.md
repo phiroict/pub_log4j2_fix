@@ -23,10 +23,11 @@ Run first
 make init
 ```
 
-This will download and unzip the 2.16 version of the log4j2 library that have been patched with 2 issues:
+This will download and unzip the 2.17 version of the log4j2 library that have been patched with 3 issues:
 - CVE-2021-44228
 - CVE-2021-45046
-
+- CVE-2021-45105
+(Note that you should NOT use the pre 2.17 version due to these and other vulnerabilities) 
 
 ## Setup
 
