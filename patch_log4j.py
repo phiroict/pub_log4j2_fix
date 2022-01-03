@@ -10,7 +10,7 @@ jar_pattern = ".jar"
 # CHANGE THIS PATH ###########################
 source = "/mnt/c/AnypointStudio"
 # ############################################
-patch_source = "apache-log4j-2.17.0-bin"
+patch_source = "apache-log4j-2.17.1-bin"
 
 for root, sub_folders, files in os.walk(source):
     for file in files:
@@ -22,7 +22,7 @@ for root, sub_folders, files in os.walk(source):
                 path = "{}/{}".format(root, file)
                 print("deleting {}".format(path))
                 os.remove(path)
-                source_replacement = "{}/{}{}".format(patch_source, pattern, "-2.17.0.jar") 
+                source_replacement = "{}/{}{}".format(patch_source, pattern, "-2.17.1.jar") 
                 #print("Copying over {}".format(source_replacement))
                 parent_path = "/".join(path.split("/")[:-1])
                 print("cp -f {} {}".format(source_replacement, path  ))
